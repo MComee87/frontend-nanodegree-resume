@@ -102,10 +102,6 @@ if (bio.skills.length > 0) {
 
     formattedSkills = HTMLskills.replace("%data%", bio.skills[8]);
     $("#skills").append(formattedSkills);
-
-    formattedSkills = HTMLskills.replace("%data%", bio.skills[9]);
-    $("#skills").append(formattedSkills);
-
 }
 
 

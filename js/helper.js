@@ -252,4 +252,3 @@ window.addEventListener('load', initializeMap);
   //map.fitBounds(mapBounds);
 //});
 
-$("#mapDiv").append(googleMap);

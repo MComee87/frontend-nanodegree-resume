@@ -65,7 +65,7 @@ var education = {
     	"title" : "Full Stack Web Developer NanoDegree",
         "school" : "Udacity",
         "dates" : 2016,
-        "url" : "www.udacity.com/course/full-stack-web-developer-nanodegree--nd004"
+        "url" : '<a href="https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004">www.udacity.com/course/full-stack-web-developer-nanodegree</a>'
     }
   ]
 };

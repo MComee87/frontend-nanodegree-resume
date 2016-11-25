@@ -20,7 +20,11 @@ var bio = {
 var work = {
 	"jobs" : [{
 	"employer" : "Inspired Web Design",
-	"title" : "Owner/Developer"
+	"title" : "Owner/Developer",
+	"location" : "Los Angeles, CA.",
+	"dates" : "April, 2016 - current",
+	"description" : "Work with clients to deliver high quality websites that meet all the clients needs, in a timely fassion."
+
 	}]
 };
 
@@ -106,11 +110,10 @@ for (job in work.jobs) {
 	var formattedEmployerTitle = formattedEmployer + formattedTitle;
 
 	$(".work-entry:last").append(formattedEmployerTitle);
+
+	var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+	$(".work-entry:last").append(formattedDates);
+
+	var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+	$(".work-entry:last").append(formattedDescription);
 }
-
-$(document).click(function(loc) {
-    var x = loc.pageX;
-    var y = loc.pageY;
-
-    logClicks(x, y);
-});

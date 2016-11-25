@@ -65,7 +65,7 @@ var education = {
     	"title" : "Full Stack Web Developer NanoDegree",
         "school" : "Udacity",
         "dates" : 2016,
-        "url" : "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004"
+        "url" : "www.udacity.com/course/full-stack-web-developer-nanodegree--nd004"
     }
   ]
 };
@@ -148,8 +148,6 @@ function inName(name) {
 	return name[0] +" "+name[1];
 };
 
-$('#main').append(internationalizeButton);
-
 projects.display = function() {
 	for (project in projects.projects) {
 		$("#projects").append(HTMLprojectStart);
@@ -186,4 +184,22 @@ for (school in education.schools) {
 	    $(".education-entry:last").append(formattedSchoolDates);
 }
 
+for (course in education.onlineCourses) {
+	$(".education-entry:last").append(HTMLonlineClasses);
+
+	var formattedCourseTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
+		$(".education-entry:last").append(formattedCourseTitle);
+
+	var formattedCourseSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
+		$(".education-entry:last").append(formattedCourseSchool);
+
+	var formattedCourseDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
+		$(".education-entry:last").append(formattedCourseDates);
+
+	var formattedCourseUrl = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
+		$(".education-entry:last").append(formattedCourseUrl);
+}
+
 $("#mapDiv").append(googleMap);
+
+$('#main').append(internationalizeButton);

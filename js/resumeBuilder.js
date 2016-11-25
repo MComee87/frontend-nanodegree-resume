@@ -107,3 +107,10 @@ for (job in work.jobs) {
 
 	$(".work-entry:last").append(formattedEmployerTitle);
 }
+
+$(document).click(function(loc) {
+    var x = loc.pageX;
+    var y = loc.pageY;
+
+    logClicks(x, y);
+});

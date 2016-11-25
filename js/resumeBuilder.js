@@ -29,7 +29,16 @@ var work = {
 };
 
 var projects = {
-	samples : [{}]
+	projects : [{
+		"title" : "<a href='http://epicstewie.netlify.com'>EpicStewie Tube</a>",
+		"dates" : "Nov 03, 2016 - Nov 08, 2016",
+		"description" : "A website to display a youtubers newest videos from multiple channels anlong with news and announcements to keep followers up to date."
+	},
+	{
+		"title" : "<a href='http://donnafaydesigns.netlify.com'>donnafay designs</a>",
+		"dates" : "Nov 23, 2016 - Nov 24, 2016",
+		"description" : "A shabby chic webstore for a fashion and mixed media artist to display and sell her one of a kind merchandise."
+	}]
 };
 
 var education = {
@@ -46,8 +55,6 @@ var education = {
 
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-var formattedEmployer = HTMLworkEmployer.replace("%data%", work.company);
-var formattedTitle = HTMLworkTitle.replace("%data%", work.position);
 var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobile);
 var formattedLocation = HTMLlocation.replace("%data%", bio.contact.location);
 var formattedEmail = HTMLemail.replace("%data%", "<a href='mailto:"+bio.contact.email+"'>mcomee87@gmail.com</a>");
@@ -117,3 +124,33 @@ for (job in work.jobs) {
 	var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 	$(".work-entry:last").append(formattedDescription);
 }
+
+function inName(name) {
+	name = name.trim().split(" ");
+	console.log(name);
+	name[1] = name[1].toUpperCase();
+	name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
+
+	return name[0] +" "+name[1];
+};
+
+$('#main').append(internationalizeButton);
+
+projects.display = function() {
+	for (project in projects.projects) {
+		$("#projects").append(HTMLprojectStart);
+
+		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+		$(".project-entry:last").append(formattedTitle);
+
+		var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
+		$(".project-entry:last").append(formattedDates);
+
+		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+		$(".project-entry:last").append(formattedDescription);
+	}
+}
+
+projects.display();
+
+$("#mapDiv").append(googleMap);

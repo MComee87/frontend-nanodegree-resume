@@ -21,7 +21,7 @@ var work = {
 	"jobs" : [{
 	"employer" : "Inspired Web Design",
 	"title" : "Owner/Developer",
-	"location" : "Los Angeles, CA.",
+	"location" : "36907 Cristallo Ct Palmdale, CA 93550",
 	"dates" : "April, 2016 - current",
 	"description" : "Work with clients to deliver high quality websites that meet all the clients needs, in a timely fassion."
 

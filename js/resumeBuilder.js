@@ -31,12 +31,12 @@ var work = {
 var projects = {
 	projects : [{
 		"title" : "<a href='http://epicstewie.netlify.com'>EpicStewie Tube</a>",
-		"dates" : "Nov 03, 2016 - Nov 08, 2016",
+		"dates" : "Nov, 2016",
 		"description" : "A website to display a youtubers newest videos from multiple channels anlong with news and announcements to keep followers up to date."
 	},
 	{
 		"title" : "<a href='http://donnafaydesigns.netlify.com'>donnafay designs</a>",
-		"dates" : "Nov 23, 2016 - Nov 24, 2016",
+		"dates" : "Nov, 2016",
 		"description" : "A shabby chic webstore for a fashion and mixed media artist to display and sell her one of a kind merchandise."
 	}]
 };

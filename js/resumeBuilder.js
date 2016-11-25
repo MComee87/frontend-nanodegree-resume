@@ -6,12 +6,12 @@ var bio = {
 	"name" : "Matthew Comee",
 	"role" : "Full Stack Web Developer",
 	"age" : 29,
-	"contact" :{
+	"contacts" :{
 	  "mobile" : "(818) 660-0332",
 	  "email" : "mcomee87@gmail.com",
 	  "github" : "https://www.github.com/MComee87",
 	  "portfolio" : "https://www.inspiredwebdesign.net",
-	  "location" : "Los Angeles"
+	  "location" : "Los Angeles, CA."
     },
 	"skills" : [" Critical Thinking", " Problem Solving", " Leadership", " Goal Oriented", " Works well as part of a team or as an individual", " HTML", " CSS", " JavaScript", " Python", " Full Stack Web Development."],
 	"bioPic" : "images/fry.jpg"
@@ -21,7 +21,7 @@ var work = {
 	"jobs" : [{
 	"employer" : "Inspired Web Design",
 	"title" : "Owner/Developer",
-	"location" : "Los Angeles, CA.",
+	"location" : "Palmdale, CA.",
 	"dates" : "April, 2016 - current",
 	"description" : "Work with clients to deliver high quality websites that meet all the clients needs, in a timely fassion."
 
@@ -55,11 +55,11 @@ var education = {
 
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobile);
-var formattedLocation = HTMLlocation.replace("%data%", bio.contact.location);
-var formattedEmail = HTMLemail.replace("%data%", "<a href='mailto:"+bio.contact.email+"'>mcomee87@gmail.com</a>");
-var formattedGithub = HTMLgithub.replace("%data%", "<a href='"+bio.contact.github+"'>Repositories</a>");
-var formattedBlog = HTMLblog.replace("%data%", "<a href='"+bio.contact.portfolio+"'>Inspired Web Design</a>");
+var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+var formattedEmail = HTMLemail.replace("%data%", "<a href='mailto:"+bio.contacts.email+"'>mcomee87@gmail.com</a>");
+var formattedGithub = HTMLgithub.replace("%data%", "<a href='"+bio.contacts.github+"'>Repositories</a>");
+var formattedBlog = HTMLblog.replace("%data%", "<a href='"+bio.contacts.portfolio+"'>Inspired Web Design</a>");
 var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
 
 

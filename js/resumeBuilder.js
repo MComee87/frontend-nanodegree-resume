@@ -11,7 +11,7 @@ var bio = {
 	  "email" : "mcomee87@gmail.com",
 	  "github" : "https://www.github.com/MComee87",
 	  "portfolio" : "https://www.inspiredwebdesign.net",
-	  "location" : "Los Angeles, CA."
+	  "location" : "Los Angeles CA."
     },
 	"skills" : [" Critical Thinking", " Problem Solving", " Leadership", " Goal Oriented", " Works well as part of a team or as an individual", " HTML", " CSS", " JavaScript", " Python", " Full Stack Web Development."],
 	"bioPic" : "images/fry.jpg"
@@ -21,7 +21,7 @@ var work = {
 	"jobs" : [{
 	"employer" : "Inspired Web Design",
 	"title" : "Owner/Developer",
-	"location" : "Palmdale, CA.",
+	"location" : "5140 st. laurent pl. Palmdale, CA.",
 	"dates" : "April, 2016 - current",
 	"description" : "Work with clients to deliver high quality websites that meet all the clients needs, in a timely fassion."
 

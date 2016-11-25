@@ -11,7 +11,7 @@ var bio = {
 	  "email" : "mcomee87@gmail.com",
 	  "github" : "https://www.github.com/MComee87",
 	  "portfolio" : "https://www.inspiredwebdesign.net",
-	  "location" : "38024 47th St E Palmdale, CA 93552"
+	  "location" : "4631 E ave S Palmdale, CA 93552"
     },
 	"skills" : [" Critical Thinking", " Problem Solving", " Leadership", " Goal Oriented", " HTML", " CSS", " JavaScript", " Python", " Full Stack Web Development."],
 	"bioPic" : "images/fry.jpg"

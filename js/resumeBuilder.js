@@ -21,7 +21,7 @@ var work = {
 	"jobs" : [{
 	"employer" : "Inspired Web Design",
 	"title" : "Owner/Developer",
-	"location" : "5140 st. laurent pl. Palmdale, CA.",
+	"location" : "5140 st. laurent pl. Palmdale, CA",
 	"dates" : "April, 2016 - current",
 	"description" : "Work with clients to deliver high quality websites that meet all the clients needs, in a timely fassion."
 
@@ -29,7 +29,8 @@ var work = {
 };
 
 var projects = {
-	projects : [{
+	"projects" : [
+	{
 		"title" : "<a href='http://epicstewie.netlify.com'>EpicStewie Tube</a>",
 		"dates" : "Nov, 2016",
 		"description" : "A website to display a youtubers newest videos from multiple channels anlong with news and announcements to keep followers up to date."
@@ -38,18 +39,35 @@ var projects = {
 		"title" : "<a href='http://donnafaydesigns.netlify.com'>donnafay designs</a>",
 		"dates" : "Nov, 2016",
 		"description" : "A shabby chic webstore for a fashion and mixed media artist to display and sell her one of a kind merchandise."
-	}]
+	}
+  ]
 };
 
 var education = {
-    "schools" : [{
-    "name" : "Udacity",
-    "major" : "Full Stack Web Developement"
-},
-{
-	"name" : "Cleveland H.S.",
-	"major" : "Highschool Diploma"
-}]
+    "schools" : [
+    {
+        "name" : "Antelope Valley College",
+	    "city" : "Lancaster, CA",
+	    "major" : "Mathematics",
+	    "dates" : "2014 - 2015",
+	    "url" : '<a href="https://www.avc.edu/">AVC.EDU</a>'
+    },
+    {
+	    "name" : "Cleveland H.S.",
+	    "city" : "Reseda, CA",
+	    "major" : "Highschool Diploma",
+	    "dates" : "2005",
+	    "url" : '<a href="http://www.clevelandhs.org/">ClevelandHS.ORG</a>'
+    }
+],
+    "onlineCourses" : [
+    {
+    	"title" : "Full Stack Web Developer NanoDegree",
+        "school" : "Udacity",
+        "dates" : 2016,
+        "url" : "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004"
+    }
+  ]
 };
 
 
@@ -148,5 +166,24 @@ projects.display = function() {
 }
 
 projects.display();
+
+for (school in education.schools) {
+	$("#education").append(HTMLschoolStart);
+
+	var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
+		$(".education-entry:last").append(formattedSchoolName);
+
+	var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].city);
+		$(".education-entry:last").append(formattedSchoolLocation);
+
+	var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
+	    $(".education-entry:last").append(formattedSchoolMajor);
+
+	var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
+	    $(".education-entry:last").append(formattedSchoolDates);
+
+    var formattedSchoolUrl = HTMLschoolName.replace("%data%", education.schools[school].url);
+	    $(".education-entry:last").append(formattedSchoolUrl);
+}
 
 $("#mapDiv").append(googleMap);

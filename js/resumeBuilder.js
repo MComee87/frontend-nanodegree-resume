@@ -80,7 +80,6 @@ var formattedGithub = HTMLgithub.replace("%data%", "<a href='"+bio.contacts.gith
 var formattedBlog = HTMLblog.replace("%data%", "<a href='"+bio.contacts.portfolio+"'>Inspired Web Design</a>");
 var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
 
-
 $("#header").prepend(formattedRole); 
 $("#header").prepend(formattedName);
 $("#header").append(formattedBioPic);
@@ -89,7 +88,8 @@ $("#topContacts").append(formattedEmail);
 $("#topContacts").append(formattedGithub);
 $("#topContacts").append(formattedBlog);
 $("#topContacts").append(formattedLocation);
-
+$("#footerContacts").append(formattedMobile);
+$("#footerContacts").append(formattedEmail);
 
 if (bio.skills.length > 0) {
 	$("#header").append(HTMLskillsStart);

@@ -213,7 +213,7 @@ span {
   padding-bottom: 5%;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 350px) {
   #skills-h3,
   .biopic {
     display: block;

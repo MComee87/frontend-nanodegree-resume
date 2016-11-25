@@ -50,14 +50,14 @@ var education = {
 	    "city" : "Lancaster, CA",
 	    "major" : "Mathematics",
 	    "dates" : "2014 - 2015",
-	    "url" : '<a href="https://www.avc.edu/">AVC.EDU</a>'
+	    "url" : '<a href="https://www.avc.edu/">WWW.AVC.EDU</a>'
     },
     {
 	    "name" : "Cleveland H.S.",
 	    "city" : "Reseda, CA",
 	    "major" : "Highschool Diploma",
 	    "dates" : "2005",
-	    "url" : '<a href="http://www.clevelandhs.org/">ClevelandHS.ORG</a>'
+	    "url" : '<a href="http://www.clevelandhs.org/">WWW.ClevelandHS.ORG</a>'
     }
 ],
     "onlineCourses" : [
@@ -173,6 +173,9 @@ for (school in education.schools) {
 	var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
 		$(".education-entry:last").append(formattedSchoolName);
 
+	var formattedSchoolUrl = HTMLschoolName.replace("%data%", education.schools[school].url);
+	    $(".education-entry:last").append(formattedSchoolUrl);
+
 	var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].city);
 		$(".education-entry:last").append(formattedSchoolLocation);
 
@@ -181,9 +184,6 @@ for (school in education.schools) {
 
 	var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
 	    $(".education-entry:last").append(formattedSchoolDates);
-
-    var formattedSchoolUrl = HTMLschoolName.replace("%data%", education.schools[school].url);
-	    $(".education-entry:last").append(formattedSchoolUrl);
 }
 
 $("#mapDiv").append(googleMap);

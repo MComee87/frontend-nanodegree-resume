@@ -13,7 +13,7 @@ var bio = {
 	  "portfolio" : "https://www.inspiredwebdesign.net",
 	  "location" : "38024 47th St E Palmdale, CA 93552"
     },
-	"skills" : [" Critical Thinking", " Problem Solving", " Leadership", " Goal Oriented", " Works well as part of a team or as an individual", " HTML", " CSS", " JavaScript", " Python", " Full Stack Web Development."],
+	"skills" : [" Critical Thinking", " Problem Solving", " Leadership", " Goal Oriented", " HTML", " CSS", " JavaScript", " Python", " Full Stack Web Development."],
 	"bioPic" : "images/fry.jpg"
 };
 

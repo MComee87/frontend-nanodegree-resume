@@ -11,9 +11,9 @@ var bio = {
 	  "email" : "mcomee87@gmail.com",
 	  "github" : "https://www.github.com/MComee87",
 	  "portfolio" : "https://www.inspiredwebdesign.net",
-	  "location" : "4631 E ave S Palmdale, CA 93552"
+	  "location" : "5140 St. Laurent pl. Palmdale, CA 93552"
     },
-	"skills" : [" Critical Thinking", " Problem Solving", " Leadership", " Goal Oriented", " HTML", " CSS", " JavaScript", " Python", " Full Stack Web Development."],
+	"skills" : [" Critical Thinking", " Problem Solving", " Leadership", " Goal Oriented", " HTML", " CSS", "Bootstrap", " JavaScript", "Processing.js", "jQuery", " Python", "SQL", " Full Stack Web Development."],
 	"bioPic" : "images/fry.jpg"
 };
 
@@ -23,13 +23,27 @@ var work = {
 	"title" : "Owner/Developer",
 	"location" : "5140 st. laurent pl. Palmdale, CA",
 	"dates" : "April, 2016 - current",
-	"description" : "Work with clients to deliver high quality websites that meet all the clients needs, in a timely fassion."
-
+	"description" : "Work with clients to deliver high quality websites that meet all of the clients needs, in a timely fassion."
 	}]
 };
 
 var projects = {
 	"projects" : [
+	{
+		"title" : "<a href='http://www.mcplaygrounds.technology'>MC's Computing Playgrounds</a>",
+		"dates" : "Apr, 2016",
+		"description" : "A place to play and learn about all things computing."
+	},
+	{
+		"title" : "<a href='http://www.pootsielous.zohosites.com'>Pootsie Lou's</a>",
+		"dates" : "Jun, 2016",
+		"description" : "Each of Pootsie Lou's Charmingly Styled accessories are diligently handcrafted to the finest quality. Every piece is uniquely designed to be one of a kind, bringing you style and class like no other."
+	},
+	{
+		"title" : "<a href='http://www.haroldshandcrafted.zohosites.com'>Hand Crafted by Harold</a>",
+		"dates" : "Aug, 2016",
+		"description" : "Beautiful hand crafted specialty boxes and misc. Made with quality imported fine wood. From jewelry and music boxes to specialty games, we have a masterfully crafted piece for everyone."
+	},
 	{
 		"title" : "<a href='http://epicstewie.netlify.com'>EpicStewie Tube</a>",
 		"dates" : "Nov, 2016",
@@ -46,25 +60,25 @@ var projects = {
 var education = {
     "schools" : [
     {
-        "name" : "Antelope Valley College",
+        "name" : "<br>Antelope Valley College",
 	    "city" : "Lancaster, CA",
-	    "major" : "Mathematics",
+	    "major" : "Mathematics<br>",
 	    "dates" : "2014 - 2015",
 	    "url" : '<a href="https://www.avc.edu/">WWW.AVC.EDU</a>'
     },
     {
-	    "name" : "Cleveland H.S.",
+	    "name" : "<br><br>Cleveland H.S.",
 	    "city" : "Reseda, CA",
-	    "major" : "Highschool Diploma",
-	    "dates" : "2005",
+	    "major" : "Highschool Diploma<br>",
+	    "dates" : "2005<br>",
 	    "url" : '<a href="http://www.clevelandhs.org/">WWW.ClevelandHS.ORG</a>'
     }
 ],
     "onlineCourses" : [
     {
-    	"title" : "Full Stack Web Developer NanoDegree",
-        "school" : "Udacity",
-        "dates" : 2016,
+    	"title" : "<br>Full Stack Web Developer NanoDegree",
+        "school" : "Udacity<br>",
+        "dates" : "2016",
         "url" : '<a href="https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004">www.udacity.com/course/full-stack-web-developer-nanodegree</a>'
     }
   ]
@@ -119,6 +133,18 @@ if (bio.skills.length > 0) {
     $("#skills").append(formattedSkills);
 
     formattedSkills = HTMLskills.replace("%data%", bio.skills[8]);
+    $("#skills").append(formattedSkills);
+    
+    formattedSkills = HTMLskills.replace("%data%", bio.skills[9]);
+    $("#skills").append(formattedSkills);
+    
+    formattedSkills = HTMLskills.replace("%data%", bio.skills[10]);
+    $("#skills").append(formattedSkills);
+    
+    formattedSkills = HTMLskills.replace("%data%", bio.skills[11]);
+    $("#skills").append(formattedSkills);
+    
+    formattedSkills = HTMLskills.replace("%data%", bio.skills[12]);
     $("#skills").append(formattedSkills);
 }
 

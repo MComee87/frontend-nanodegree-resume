@@ -7,7 +7,7 @@ var bio = {
 	"role" : "Full Stack Web Developer",
 	"age" : 29,
 	"contacts" :{
-	  "mobile" : "(818) 660-0332",
+	  "mobile" : "(661) 317-7042",
 	  "email" : "mcomee87@gmail.com",
 	  "github" : "https://www.github.com/MComee87",
 	  "portfolio" : "https://www.inspiredwebdesign.net",
